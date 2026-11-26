@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MileSlide</string>
+    <string name="widget_name">MileSlide (km ↔ mi)</string>
+    <string name="widget_description">Compact dark-mode kilometers to miles slide converter widget</string>
+    <string name="unit_km">km</string>
+    <string name="unit_mi">mi</string>
+    <string name="enter_km_title">Enter Kilometers (km)</string>
+    <string name="enter_mi_title">Enter Miles (mi)</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_set">Set</string>
+    <string name="cd_decrease">Decrease kilometers</string>
+    <string name="cd_increase">Increase kilometers</string>
+    <string name="cd_toggle_theme">Toggle dark mode</string>
+    <string name="cd_ruler">Kilometers scale ruler</string>
+</resources>

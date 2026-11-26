@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/widget_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/widget_bg_dark"
+        android:gravity="center_vertical"
+        android:minHeight="72dp"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:id="@+id/btn_minus"
+            android:layout_width="36dp"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_decrease"
+            android:padding="8dp"
+            android:src="@drawable/ic_minus" />
+
+        <LinearLayout
+            android:id="@+id/group_km"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp">
+
+            <TextView
+                android:id="@+id/txt_km_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="10.0"
+                android:textColor="@color/dark_text_primary"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/txt_km_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:includeFontPadding="false"
+                android:text="@string/unit_km"
+                android:textColor="@color/dark_text_muted"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.mileslide.converter.InteractiveRulerView
+            android:id="@+id/interactive_ruler"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/cd_ruler" />
+
+        <LinearLayout
+            android:id="@+id/group_mi"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp">
+
+            <TextView
+                android:id="@+id/txt_mi_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="6.2"
+                android:textColor="@color/cyan_accent_dark"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/txt_mi_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:includeFontPadding="false"
+                android:text="@string/unit_mi"
+                android:textColor="@color/dark_text_muted"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_plus"
+            android:layout_width="36dp"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_increase"
+            android:padding="8dp"
+            android:src="@drawable/ic_plus" />
+
+        <ImageView
+            android:id="@+id/btn_theme"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_toggle_theme"
+            android:padding="8dp"
+            android:src="@drawable/ic_sun" />
+    </LinearLayout>
+</FrameLayout>

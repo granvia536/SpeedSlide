@@ -1,0 +1,6 @@
+{
+  "name": "MileSlide",
+  "description": "Tactile dark-mode kilometers to miles slide-rule converter with precision dual-scale scrubbing and instant benchmarks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
